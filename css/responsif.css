@@ -5,7 +5,7 @@
     }
 
     #hero .banner {
-        padding: 0 0 100px 0;
+        padding: 0 0 50px 0;
     }
 
     #hero .title .title-welcome {
@@ -13,6 +13,14 @@
         font-family: "Poppins", sans-serif;
         font-weight: 800;
         font-size: 18px;
+        font-style: normal;
+        color: white;
+    }
+
+    #hero .title .title-AlmaAta {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
         line-height: 37.5px;
         font-style: normal;
     }
@@ -21,9 +29,74 @@
         font-family: "Poppins", sans-serif;
         font-weight: 800;
         font-size: 30px;
-        line-height: 67.5px;
+        line-height: 30px;
         font-style: normal;
     }
+
+    #hero .navbar .collapse {
+        text-align: end;
+    }
+
+    #hero .navbar .collapse .navbar-nav {
+        padding: 0;
+    }
+
+    #hero .banner .image {
+        margin-top: 1rem;
+    }
+
+    #hero .btn-banner {
+        margin-top: 10px;
+    }
+
+    #tentang-kami .tentang .image-box {
+        padding: 0 20px 0 20px;
+    }
+
+    #tentang-kami .tentang .image-box img {
+        width: 400px;
+        height: 250px;
+    }
+
+    #tentang-kami .tentang .describe {
+        margin-top: 50px;
+    }
+
+    #tentang-kami .tentang .visimisi {
+        margin-top: 50px;
+    }
+
+    #tentang-kami .tentang .visimisi .col-sm-12 {
+        padding: 1rem 30px 1rem 30px;
+    }
+
+    #tentang-kami .tentang .title-box {
+        text-align: justify;
+        padding: 0 30px 0 30px;
+        margin-top: 1rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        font-style: normal;
+    }
+
+    #pengurusInti .pengurus {
+        padding: 0 20px 0 20px;
+    }
+
+    #divisi .container figcaption {
+        margin: -150px 10px 0 10px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        font-style: normal;
+        width: 100%;
+    }
+
+    footer {
+        padding: 0 0 50px 0;
+    }
+
 }
 
 @media (min-width: 481px) and (max-width: 767px) {}

@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ekonomi</title>
+    <title>Ekonomi | PSY</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsif.css">
     <link rel="shortcut icon" href="assets/LogoHimaPSY.png" type="image/x-icon">
 
     <!-- bootstrap -->
@@ -19,6 +20,10 @@
     <!-- Boostrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <!-- Hover CSS -->
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/hover.css">
+
     <!-- Swiper Js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -30,6 +35,14 @@
         rel="stylesheet">
 
     <style>
+        #hero .container {
+            background-color: #41565C;
+        }
+
+        #hero .navbar {
+            padding: 10px 20px 10px 20px;
+        }
+
         #hero .banner .box-title {
             padding: 0 200px 0 200px;
         }
@@ -44,11 +57,20 @@
 
         #hero .banner .box-title p {
             font-family: Poppins;
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 400;
             line-height: 30px;
             text-align: center;
+            text-align: justify;
 
+        }
+
+        #hero .navbar .collapse .navbar-nav {
+            text-align: end;
+        }
+
+        #hero .navbar .collapse .navbar-nav {
+            padding: 0;
         }
 
         #hero .banner .mySwiper .swiper-wrapper {
@@ -57,7 +79,7 @@
 
         #program .Kerja .visimisi {
             margin-top: 100px;
-            padding: 0 170px 0 170px;
+            padding: 0;
         }
 
         #program .Kerja .card-text {
@@ -70,9 +92,8 @@
         }
 
         /* ************************************************** DIVISI ************************************************** */
-
         #hero .banner {
-            padding: 50px 0 50px 0;
+            padding: 100px 0 100px 0;
         }
 
         #hero .banner .box-title {
@@ -80,7 +101,7 @@
         }
 
         #program .Kerja {
-            padding: 100px 0 50px 0;
+            padding: 100px 0 100px 0;
         }
 
         /* ************************************************** FOOTER ************************************************** */
@@ -119,147 +140,200 @@
             color: black;
             opacity: 0.8;
         }
+
+        /* ************************************************** Responsif ************************************************** */
+
+
+        @media (max-width: 480px) {
+            #hero .banner .box-title h1 {
+                /* width: 100%; */
+                font-family: Poppins;
+                font-size: 30px;
+                font-weight: 700;
+                text-align: justify;
+            }
+
+            #hero .banner {
+                padding: 1rem 0 1rem 0;
+            }
+
+            #hero .banner .row-form {
+                margin-top: 0 !important;
+            }
+
+            #hero .banner .box-title {
+                text-align: start;
+            }
+
+            #program .Kerja .col-sm-12 {
+                padding: 1rem 30px 1rem 30px;
+            }
+
+            #program .Kerja .visimisi {
+                margin-top: 0;
+                padding: 0;
+            }
+
+            #program .Kerja .jarak {
+                margin-top: 100px;
+            }
+
+            footer {
+                padding: 0 0 50px 0;
+            }
+        }
     </style>
 </head>
 
 <body>
     <!-- Hero Section Start -->
     <section id="hero">
-        <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-lg bg-body-tranparant">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/LogoHimaPSY.png" alt="Logo" width="40" height="30"
-                        class="d-inline-block align-text-top">
-                    HimaPSY UAA
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigasi-bar"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navigasi-bar">
-                    <ul class="navbar-nav me-end mb-2 mb-lg-0 p-3">
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="index.html">Beranda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#program">Program</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Divisi
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="BPH.html">Badan Pengurus Harian</a></li>
-                                <hr class="dropdown-divider">
-                                <li><a class="dropdown-item" href="ekonomi.html">Divisi EKONOMI</a></li>
-                                <li><a class="dropdown-item" href="agama.html">Divisi AGAMA</a></li>
-                                <li><a class="dropdown-item" href="PSDA.html">Divisi PSDA</a></li>
-                                <li><a class="dropdown-item" href="sosmas.html">Divisi SOSMAS</a></li>
-                                <li><a class="dropdown-item" href="diklat.html">Divisi DIKLAT</a></li>
-                                <li><a class="dropdown-item" href="kominfo.html">Divisi KOMINFO</a></li>
-                                <li>
+        <div class="container-fluid">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand-lg bg-body-tranparant">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/LogoHimaPSY.png" alt="Logo" width="50" height="40"
+                            class="d-inline-block align-text-top">
+                        <span>HIMA | PSY</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navigasi-bar" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigasi-bar">
+                        <ul class="navbar-nav me-end mb-2 mb-lg-0">
 
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#footer">Kontak</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="saran.html">Saran</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Navbar End -->
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-left" aria-current="page"
+                                    href="index.html">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-left" aria-current="page" href="#program">Program
+                                    Kerja</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle hvr-underline-from-left" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Divisi
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="BPH.html">Badan Pengurus Harian</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="ekonomi.html">Divisi EKONOMI</a></li>
+                                    <li><a class="dropdown-item" href="agama.html">Divisi AGAMA</a></li>
+                                    <li><a class="dropdown-item" href="PSDA.html">Divisi PSDA</a></li>
+                                    <li><a class="dropdown-item" href="sosmas.html">Divisi SOSMAS</a></li>
+                                    <li><a class="dropdown-item" href="diklat.html">Divisi DIKLAT</a></li>
+                                    <li><a class="dropdown-item" href="kominfo.html">Divisi KOMINFO</a></li>
+                                    <li>
 
-        <!-- Banner Start -->
-        <div class="container banner">
-            <div class="container">
-                <div class="row align-items-center box-title">
-                    <div class="col-lg-12 ">
-                        <h1 class="text-center">Divisi Ekonomi</h1>
-                    </div>
-                    <div class="col-lg-12 mt-3">
-                        <p class="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-                            tenetur nisi? Vel
-                            temporibus officia, est hic, mollitia enim quaerat sequi, ad inventore dignissimos nostrum
-                            autem impedit laudantium dicta natus blanditiis laborum tempore a maiores harum quis amet
-                            doloremque. Aspernatur, veritatis.</p>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-left" aria-current="page"
+                                    href="#footer">Kontak</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-left" aria-current="page"
+                                    href="saran.html">Saran</a>
+                            </li>
+
+                        </ul>
                     </div>
                 </div>
-                <div class="row align-items-center mt-5">
-                    <div class="col-12">
+            </nav>
+            <!-- Navbar End -->
 
-                        <!-- Swiper -->
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide ">
-                                    <div class="card bg-transparent" style="width: 18rem; border: none;">
-                                        <img src="assets/Group.png" class="card-img-top rounded-3" alt="...">
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title">Aizan Syalim</h5>
-                                            <p class="card-text">Ketua Umum</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide ">
-                                    <div class="card bg-transparent" style="width: 18rem; border: none;">
-                                        <img src="assets/Group.png" class="card-img-top rounded-3" alt="...">
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title">Raden Muhammad Lukman</h5>
-                                            <p class="card-text">Wakil Ketua</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide ">
-                                    <div class="card bg-transparent" style="width: 18rem; border: none;">
-                                        <img src="assets/Group.png" class="card-img-top rounded-3" alt="...">
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title">Ratnasari</h5>
-                                            <p class="card-text">Sekretaris</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide ">
-                                    <div class="card bg-transparent" style="width: 18rem; border: none;">
-                                        <img src="assets/Group.png" class="card-img-top rounded-3" alt="...">
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title">Octa Putri Ramadhania</h5>
-                                            <p class="card-text">Bendahara</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide ">
-                                    <div class="card bg-transparent" style="width: 18rem; border: none;">
-                                        <img src="assets/Group.png" class="card-img-top rounded-3" alt="...">
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title">Andre</h5>
-                                            <p class="card-text">Sekretaris 2</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide ">
-                                    <div class="card bg-transparent" style="width: 18rem; border: none;">
-                                        <img src="assets/Group.png" class="card-img-top rounded-3" alt="...">
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title">Vina Salsabila</h5>
-                                            <p class="card-text">Bendahara 2</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+            <!-- Banner Start -->
+            <div class="container banner">
+                <div class="container">
+                    <div class="row align-items-center box-title">
+                        <div class="col-lg-12 text-center ">
+                            <h1 class="hvr-underline-from-left">Divisi Ekonomi</h1>
                         </div>
+                        <div class="col-lg-12 describe mt-3">
+                            <p class="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+                                tenetur nisi? Vel
+                                temporibus officia, est hic, mollitia enim quaerat sequi, ad inventore dignissimos
+                                nostrum
+                                autem impedit laudantium dicta natus blanditiis laborum tempore a maiores harum quis
+                                amet
+                                doloremque. Aspernatur, veritatis.</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mt-5">
+                        <div class="col-12">
 
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide ">
+                                        <div class="card bg-transparent hvr-float" style="width: 15rem; border: none;">
+                                            <img src="assets/Group.png" class="card-img-top rounded-3" alt="...">
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">Muhammad Saiful Romli</h5>
+                                                <p class="card-text">Koordinator</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide ">
+                                        <div class="card bg-transparent hvr-float" style="width: 15rem; border: none;">
+                                            <img src="assets/Group.png" class="card-img-top rounded-3" alt="...">
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">Syahrul</h5>
+                                                <p class="card-text">Staf Divisi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide ">
+                                        <div class="card bg-transparent hvr-float" style="width: 15rem; border: none;">
+                                            <img src="assets/Group.png" class="card-img-top rounded-3" alt="...">
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">Afrizal</h5>
+                                                <p class="card-text">Staf Divisi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide ">
+                                        <div class="card bg-transparent hvr-float" style="width: 15rem; border: none;">
+                                            <img src="assets/Group.png" class="card-img-top rounded-3" alt="...">
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">Bagas</h5>
+                                                <p class="card-text">Staf Divisi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide ">
+                                        <div class="card bg-transparent hvr-float" style="width: 15rem; border: none;">
+                                            <img src="assets/Group.png" class="card-img-top rounded-3" alt="...">
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">Afif </h5>
+                                                <p class="card-text">Staf Divisi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide ">
+                                        <div class="card bg-transparent hvr-float" style="width: 15rem; border: none;">
+                                            <img src="assets/Group.png" class="card-img-top rounded-3" alt="...">
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">Vina Salsabila</h5>
+                                                <p class="card-text">Bendahara 2</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- Banner End -->
         </div>
-        <!-- Banner End -->
 
     </section>
     <!-- Hero Section End -->
@@ -274,16 +348,16 @@
                 </div>
             </div>
             <!-- Row 1 -->
-            <div class="row align-items-center visimisi">
-                <div class="col-6 d-flex justify-content-center">
-                    <div class="card text-center" style="width: 25rem; height: 350px;">
+            <div class="row align-items-center visimisi jarak">
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="card text-center hvr-float" style="width: 25rem; height: 350px;">
                         <div class="card-body">
                             <p class="card-text">Mencari Informasi (Lomba, Webinar, Pelatihan, dll)</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-center">
-                    <div class="card text-center" style="width: 25rem; height: 350px;">
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="card text-center hvr-float" style="width: 25rem; height: 350px;">
                         <div class="card-body">
                             <p class="card-text">Membuat Video Perkenalan Kepengurusan</p>
                         </div>
@@ -292,15 +366,15 @@
             </div>
             <!-- Row 2 -->
             <div class="row align-items-center visimisi">
-                <div class="col-6 d-flex justify-content-center">
-                    <div class="card text-center" style="width: 25rem; height: 350px;">
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="card text-center hvr-float" style="width: 25rem; height: 350px;">
                         <div class="card-body">
                             <p class="card-text">Dokumentasi Kegiatan</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-center">
-                    <div class="card text-center" style="width: 25rem; height: 350px;">
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="card text-center hvr-float" style="width: 25rem; height: 350px;">
                         <div class="card-body">
                             <p class="card-text">Story Instagram</p>
                         </div>
@@ -309,15 +383,15 @@
             </div>
             <!-- Row 3 -->
             <div class="row align-items-center visimisi">
-                <div class="col-6 d-flex justify-content-center">
-                    <div class="card text-center" style="width: 25rem; height: 350px;">
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="card text-center hvr-float" style="width: 25rem; height: 350px;">
                         <div class="card-body">
                             <p class="card-text">Feed Instagram</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-center">
-                    <div class="card text-center" style="width: 25rem; height: 350px;">
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="card text-center hvr-float" style="width: 25rem; height: 350px;">
                         <div class="card-body">
                             <p class="card-text">Pengetahuan Informatika</p>
                         </div>
@@ -333,40 +407,43 @@
     <footer id="footer">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6 logo text-center">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 logo text-center">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 logo">
+                            <div class="col-lg-12 col-md-12 col-sm-6 logo">
                                 <img src="assets/LogoHimaPSY.png" alt="">
                             </div>
-                            <div class="col-12">
+                            <div class="col-lg-12 col-md-12 col-sm-6">
                                 <div class="container icon">
-                                    <a href="http://linkedln.com"><i class="bi bi-linkedin"></i></a>
-                                    <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
-                                    <a href="http://twitter.com"><i class="bi bi-twitter"></i></a>
-                                    <a href="http://tiktok.com"><i class="bi bi-tiktok"></i></a>
-                                    <a href="http://whatsapp.com"><i class="bi bi-envelope"></i></a>
+                                    <a href="http://linkedln.com"><i class="bi bi-linkedin hvr-float"></i></a>
+                                    <a href="http://instagram.com"><i class="bi bi-instagram hvr-float"></i></a>
+                                    <a href="http://twitter.com"><i class="bi bi-twitter hvr-float"></i></a>
+                                    <a href="http://tiktok.com"><i class="bi bi-tiktok hvr-float"></i></a>
+                                    <a href="http://whatsapp.com"><i class="bi bi-envelope hvr-float"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 title text-center ">
+                <div class="col-lg-6 col-md-6 col-sm-6 title text-center ">
                     <h2>Hubungi Kami</h2>
-                    <i class="bi bi-telephone-fill"></i> <a href="">+62-822-5569-3035</a> <br>
-                    <i class="bi bi-chat-left-dots-fill"></i> <a href="mailto:">himapsy@gmail.com</a>
+                    <i class="bi bi-telephone-fill hvr-float"></i> <a href=""
+                        class="hvr-underline-from-left">+62-822-5569-3035</a> <br>
+                    <i class="bi bi-chat-left-dots-fill hvr-float"></i> <a href="mailto:"
+                        class="hvr-underline-from-left">himapsy@gmail.com</a>
                 </div>
+
             </div>
             <hr>
             <div class="row p-3">
                 <div class="col-12 text-center">
-                    <p>copyright &copy; 2024 HIMAPSY UAA.</p>
+                    <p>copyright &copy; 2024 HIMAPSY UAA</p>
                 </div>
             </div>
         </div>
     </footer>
     <!-- Footer Start  -->
-
 
     <!-- ############################################################################ -->
     <!-- Swiper JS -->
@@ -392,6 +469,7 @@
             },
         });
     </script>
+
 </body>
 
 </html>

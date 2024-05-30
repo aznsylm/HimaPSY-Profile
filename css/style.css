@@ -22,6 +22,11 @@
     margin-left: 10px;
 }
 
+#hero .navbar .collapse .navbar-nav {
+    padding: 1rem;
+}
+
+
 #hero .navbar .collapse .nav-link {
     font-family: Poppins;
     font-size: 18px;

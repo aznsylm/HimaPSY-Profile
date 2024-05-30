@@ -65,6 +65,14 @@
 
         }
 
+        #hero .navbar .collapse .navbar-nav {
+            text-align: end;
+        }
+
+        #hero .navbar .collapse .navbar-nav {
+            padding: 0;
+        }
+
         #hero .banner .mySwiper .swiper-wrapper {
             margin-right: 20px;
         }
@@ -138,12 +146,40 @@
 
         @media (max-width: 480px) {
             #hero .banner .box-title h1 {
-                width: 100%;
+                /* width: 100%; */
                 font-family: Poppins;
                 font-size: 30px;
                 font-weight: 700;
-                line-height: 52.5px;
-                text-align: left;
+                text-align: justify;
+            }
+
+            #hero .banner {
+                padding: 1rem 0 1rem 0;
+            }
+
+            #hero .banner .row-form {
+                margin-top: 0 !important;
+            }
+
+            #hero .banner .box-title {
+                text-align: start;
+            }
+
+            #program .Kerja .col-sm-12 {
+                padding: 1rem 30px 1rem 30px;
+            }
+
+            #program .Kerja .visimisi {
+                margin-top: 0;
+                padding: 0;
+            }
+
+            #program .Kerja .jarak {
+                margin-top: 100px;
+            }
+
+            footer {
+                padding: 0 0 50px 0;
             }
         }
     </style>
@@ -167,7 +203,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navigasi-bar">
-                        <ul class="navbar-nav me-end mb-2 mb-lg-0 p-3">
+                        <ul class="navbar-nav me-end mb-2 mb-lg-0">
 
                             <li class="nav-item">
                                 <a class="nav-link hvr-underline-from-left" aria-current="page"
@@ -217,7 +253,7 @@
                         <div class="col-lg-12 text-center ">
                             <h1 class="hvr-underline-from-left">Badan Pengurus Harian</h1>
                         </div>
-                        <div class="col-lg-12 mt-3">
+                        <div class="col-lg-12 describe mt-3">
                             <p class="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
                                 tenetur nisi? Vel
                                 temporibus officia, est hic, mollitia enim quaerat sequi, ad inventore dignissimos
@@ -312,15 +348,15 @@
                 </div>
             </div>
             <!-- Row 1 -->
-            <div class="row align-items-center visimisi">
-                <div class="col-6 d-flex justify-content-center">
+            <div class="row align-items-center visimisi jarak">
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
                     <div class="card text-center hvr-float" style="width: 25rem; height: 350px;">
                         <div class="card-body">
                             <p class="card-text">Mencari Informasi (Lomba, Webinar, Pelatihan, dll)</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
                     <div class="card text-center hvr-float" style="width: 25rem; height: 350px;">
                         <div class="card-body">
                             <p class="card-text">Membuat Video Perkenalan Kepengurusan</p>
@@ -330,14 +366,14 @@
             </div>
             <!-- Row 2 -->
             <div class="row align-items-center visimisi">
-                <div class="col-6 d-flex justify-content-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
                     <div class="card text-center hvr-float" style="width: 25rem; height: 350px;">
                         <div class="card-body">
                             <p class="card-text">Dokumentasi Kegiatan</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
                     <div class="card text-center hvr-float" style="width: 25rem; height: 350px;">
                         <div class="card-body">
                             <p class="card-text">Story Instagram</p>
@@ -347,14 +383,14 @@
             </div>
             <!-- Row 3 -->
             <div class="row align-items-center visimisi">
-                <div class="col-6 d-flex justify-content-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
                     <div class="card text-center hvr-float" style="width: 25rem; height: 350px;">
                         <div class="card-body">
                             <p class="card-text">Feed Instagram</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
                     <div class="card text-center hvr-float" style="width: 25rem; height: 350px;">
                         <div class="card-body">
                             <p class="card-text">Pengetahuan Informatika</p>
@@ -375,10 +411,10 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 logo text-center">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-6 col-md-12 col-sm-6 logo">
+                            <div class="col-lg-12 col-md-12 col-sm-6 logo">
                                 <img src="assets/LogoHimaPSY.png" alt="">
                             </div>
-                            <div class="col-lg-6 col-md-12 col-sm-6">
+                            <div class="col-lg-12 col-md-12 col-sm-6">
                                 <div class="container icon">
                                     <a href="http://linkedln.com"><i class="bi bi-linkedin hvr-float"></i></a>
                                     <a href="http://instagram.com"><i class="bi bi-instagram hvr-float"></i></a>
