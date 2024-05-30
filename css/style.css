@@ -1,28 +1,43 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 #hero {
-    /* background-image: url("../assets/Hero-Section.jpg"); */
-    /* Ganti "assets/hero-background.jpg" dengan lokasi gambar Anda */
-    background-size: cover;
-    /* Menyesuaikan ukuran gambar agar menutupi seluruh area */
-    background-position: center;
-    /* Memposisikan gambar di tengah */
-    background-repeat: no-repeat;
-    /* Mencegah gambar berulang */
-    background: linear-gradient(250.54deg, rgba(21, 54, 63, 0.76) -32%, #EEF1F2 60.41%);
-
+    margin: 0;
+    padding: 0;
 }
 
-#hero .navbar .collapse .nav-link {
-    margin-right: 20px;
+#hero .container-fluid {
+    background-color: #41565C;
+}
+
+#hero .navbar {
+    padding: 10px 20px 10px 20px;
+}
+
+#hero .navbar .navbar-brand span {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.5px;
+    text-align: left;
+    margin-left: 10px;
 }
 
 #hero .navbar .collapse .nav-link {
     font-family: Poppins;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 22.5px;
     text-align: left;
+}
+
+#hero .navbar .collapse .nav-link {
+    margin-right: 20px;
+    color: white;
+}
+
+#hero .navbar .navbar-brand {
+    display: flex;
+    align-items: center;
 }
 
 #hero .banner {
@@ -30,8 +45,6 @@
 }
 
 #hero .title h1 {
-    width: 528px;
-    margin-top: 50px;
     font-family: "Poppins", sans-serif;
     font-weight: 800;
     font-size: 45px;
@@ -40,7 +53,6 @@
 }
 
 #hero .title .title-welcome {
-    width: 528px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 25px;
@@ -49,7 +61,6 @@
 }
 
 #hero .title .title-AlmaAta {
-    width: 528px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 25px;
@@ -66,12 +77,16 @@
     font-style: normal;
     padding: 10px 50px 10px 50px;
     border-radius: 10px;
-    background-color: #41565C;
+    background-color: #ffffff;
+}
+
+
+#hero .btn-banner a {
+    text-decoration: none;
 }
 
 #tentang-kami .tentang, #program .Kerja {
     padding: 100px 0 100px 0;
-    /* background-color: aqua; */
 }
 
 #tentang-kami .tentang h1, #program .Kerja h1 {
@@ -95,10 +110,9 @@
     font-style: normal;
 }
 
-/* #tentang-kami .tentang .card-box, #program .Kerja {
-    background-color: red;
-    padding: 50px 50px 50px 50px;
-} */
+#tentang-kami .tentang .describe {
+    margin-top: 100px;
+}
 
 #tentang-kami .tentang .visimisi {
     margin-top: 100px;
@@ -107,6 +121,9 @@
 #tentang-kami .tentang .card,
 #program .Kerja .card {
     background-image: url(../assets/almaata.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #tentang-kami .tentang .card:hover,
@@ -139,7 +156,10 @@
 
 #pengurusInti .pengurus {
     padding: 100px 0 100px 0;
+}
 
+#pengurusInti .pengurus .slide {
+    margin-top: 100px;
 }
 
 #divisi .container {
@@ -163,7 +183,7 @@
 }
 
 footer {
-    padding: 100px 0 0 0;
+    padding: 100px 0 50px 0;
 }
 
 footer img {

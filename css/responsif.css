@@ -1,0 +1,181 @@
+/* ************************************************** SMARTPHONE ************************************************** */
+@media (max-width: 480px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
+    #hero .banner {
+        padding: 0 0 100px 0;
+    }
+
+    #hero .title .title-welcome {
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 37.5px;
+        font-style: normal;
+    }
+
+    #hero .title h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 67.5px;
+        font-style: normal;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {}
+
+/* ************************************************** TABLET ************************************************** */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #hero .navbar {
+        padding: 10px 20px 10px 20px;
+    }
+
+    #hero .banner {
+        display: flex;
+        justify-content: center;
+        padding: 50px 0 50px 0;
+    }
+
+    #hero .banner .container {
+        margin: 0;
+        max-width: 769px;
+    }
+
+    #hero .banner .container .row .col-lg-6 {
+        flex: 1;
+    }
+
+    #hero .title {
+        margin-top: 50px;
+    }
+
+    #hero .title h1 {
+        width: 100%;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 67.5px;
+        font-style: normal;
+    }
+
+    #hero .title .title-welcome {
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 37.5px;
+        font-style: normal;
+    }
+
+    #hero .title .title-AlmaAta {
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 37.5px;
+        font-style: normal;
+    }
+
+    #hero .title .btn {
+        width: 100%;
+        margin: 50px 20px 20px 0;
+        padding: 10px 50px 10px 50px;
+    }
+
+    #hero .image {
+        display: flex;
+        justify-content: center;
+    }
+
+    #hero .image img {
+        height: auto;
+        width: 100%;
+    }
+
+    #tentang-kami .tentang .title-box {
+        margin-top: 3rem;
+        padding: 20px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        font-style: normal;
+        text-align: justify;
+    }
+
+    #tentang-kami .tentang .visimisi {
+        margin: 0;
+        padding: 20px;
+    }
+
+    #pengurusInti .pengurus {
+        padding: 100px;
+    }
+
+    #divisi .container {
+        padding: 100px 0 100px 0;
+    }
+
+    #divisi .container .bph {
+        margin: -200px 10px 0 10px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        font-style: normal;
+        width: 100%;
+    }
+
+    #divisi .container figcaption {
+        margin: -120px 10px 0 10px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        font-style: normal;
+        width: 100%;
+    }
+
+    #divisi .container figcaption span {
+        font-weight: 400;
+        font-size: 25px;
+    }
+
+    footer {
+        padding: 50px 0 0 0;
+    }
+
+    footer img {
+        width: 90px;
+        height: 70px;
+        top: 31px;
+        left: 463px;
+        gap: 0px;
+        opacity: 0px;
+    }
+
+    footer .icon {
+        padding: 20px 0 0 0;
+    }
+
+    footer .icon .bi {
+        margin-left: 10px;
+        font-size: 35px;
+    }
+
+    footer .row .title h2 {
+        display: flex;
+        justify-content: center;
+        font-family: Poppins;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 37.5px;
+        text-align: left;
+    }
+
+}
+
+/* ************************************************** LAPTOP ************************************************** */
+@media (min-width: 481px) and (max-width: 767px)

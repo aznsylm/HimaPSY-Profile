@@ -7,6 +7,7 @@
     <title>Form Saran</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/LogoHimaPSY.png" type="image/x-icon">
 
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,8 +16,13 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+
     <!-- Boostrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Hover CSS -->
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/hover.css">
 
     <!-- Swiper Js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -29,9 +35,14 @@
         rel="stylesheet">
 
     <style>
-        /* #hero .banner .box-title {
-            padding: 0 100px 0 100px;
-        } */
+        /* ************************************************** CONTENT ************************************************** */
+        #hero .navbar {
+            padding: 10px 20px 10px 20px;
+        }
+
+        #hero .banner {
+            padding: 100px 130px 100px 130px;
+        }
 
         #hero .banner .box-title h1 {
             font-family: Poppins;
@@ -52,12 +63,12 @@
         }
 
         #hero .banner .box-form {
-            padding: 100px 200px 100px 200px;
+            padding: 50px 0 50px 0;
             background-color: #14363E;
         }
 
         #hero .banner .box {
-            padding: 0 50px 0 50px;
+            padding: 0 100px 0 100px;
         }
 
         #hero .banner .box-form .btn {
@@ -71,7 +82,120 @@
         }
 
         #hero .banner .row-form {
-            padding: 0 100px 0 100px;
+            padding: 0;
+        }
+
+        /* ************************************************** FOOTER ************************************************** */
+
+        footer {
+            padding: 100px 0 0 0;
+        }
+
+        footer img {
+            width: 109px;
+            height: 99px;
+            top: 31px;
+            left: 463px;
+            gap: 0px;
+            opacity: 0px;
+        }
+
+        footer .icon .bi {
+            margin-left: 10px;
+            font-size: 35px;
+        }
+
+        footer .row .title h2 {
+            display: flex;
+            justify-content: center;
+            font-family: Poppins;
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 37.5px;
+            text-align: left;
+        }
+
+        footer .row .logo .icon a,
+        footer .row .title a {
+            text-decoration: none;
+            color: black;
+            opacity: 0.8;
+        }
+
+        /* ************************************************** SMARTPHONE ************************************************** */
+        @media (max-width: 480px) {
+            #hero .banner {
+                padding: 0;
+            }
+
+            #hero .banner .box-title h1 {
+                font-family: Poppins;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 48px;
+                text-align: left;
+                color: #ffffff;
+            }
+
+            #hero .banner .box-title p {
+                margin-top: -15px;
+                font-family: Poppins;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 30px;
+                text-align: left;
+                color: #ffffff;
+            }
+
+            #hero .banner .box {
+                padding: 0 20px 0 20px;
+
+            }
+
+            #hero .banner .box-form {
+                padding: 30px 0 30px 0;
+                background-color: #14363E;
+            }
+
+            #hero footer .title h2 {
+                display: flex;
+                justify-content: center;
+                font-family: Poppins;
+                font-size: 30px;
+                font-weight: 600;
+                line-height: 37.5px;
+                text-align: left;
+            }
+
+        }
+
+        /* ************************************************** TABLET ************************************************** */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            #hero .banner {
+                padding: 50px 70px 50px 70px;
+            }
+
+            #hero .banner .box-title h1 {
+                font-family: Poppins;
+                font-size: 25px;
+                font-weight: 700;
+                line-height: 48px;
+                text-align: left;
+                color: #ffffff;
+            }
+
+            #hero .banner .box-title p {
+                font-family: Poppins;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 30px;
+                text-align: left;
+                color: #ffffff;
+            }
+
+            #hero .banner .box {
+                padding: 0 50px 0 50px;
+            }
         }
     </style>
 </head>
@@ -79,140 +203,147 @@
 <body>
     <!-- Hero Section Start -->
     <section id="hero">
-        <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-lg bg-body-tranparant">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/LogoHimaPSY.png" alt="Logo" width="40" height="30"
-                        class="d-inline-block align-text-top">
-                    HimaPSY UAA
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigasi-bar"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navigasi-bar">
-                    <ul class="navbar-nav me-end mb-2 mb-lg-0 p-3">
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="index.html">Beranda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#program">Program</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Divisi
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="BPH.html">Badan Pengurus Harian</a></li>
-                                <hr class="dropdown-divider">
-                                <li><a class="dropdown-item" href="ekonomi.html">Divisi EKONOMI</a></li>
-                                <li><a class="dropdown-item" href="agama.html">Divisi AGAMA</a></li>
-                                <li><a class="dropdown-item" href="PSDA.html">Divisi PSDA</a></li>
-                                <li><a class="dropdown-item" href="sosmas.html">Divisi SOSMAS</a></li>
-                                <li><a class="dropdown-item" href="diklat.html">Divisi DIKLAT</a></li>
-                                <li><a class="dropdown-item" href="kominfo.html">Divisi KOMINFO</a></li>
-                                <li>
+        <div class="container-fluid">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand-lg bg-body-tranparant">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/LogoHimaPSY.png" alt="Logo" width="50" height="40"
+                            class="d-inline-block align-text-top">
+                        <span>HIMA | PSY</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navigasi-bar" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigasi-bar">
+                        <ul class="navbar-nav me-end mb-2 mb-lg-0 p-3">
 
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#footer">Kontak</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="saran.html">Saran</a>
-                        </li>
-                    </ul>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-left" aria-current="page"
+                                    href="index.html">Beranda</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle hvr-underline-from-left" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Divisi
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="BPH.html">Badan Pengurus Harian</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="ekonomi.html">Divisi EKONOMI</a></li>
+                                    <li><a class="dropdown-item" href="agama.html">Divisi AGAMA</a></li>
+                                    <li><a class="dropdown-item" href="PSDA.html">Divisi PSDA</a></li>
+                                    <li><a class="dropdown-item" href="sosmas.html">Divisi SOSMAS</a></li>
+                                    <li><a class="dropdown-item" href="diklat.html">Divisi DIKLAT</a></li>
+                                    <li><a class="dropdown-item" href="kominfo.html">Divisi KOMINFO</a></li>
+                                    <li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-left" aria-current="page"
+                                    href="#footer">Kontak</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-left" aria-current="page"
+                                    href="saran.html">Saran</a>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <!-- Navbar End -->
+            </nav>
+            <!-- Navbar End -->
 
-        <!-- Banner Start -->
-        <div class="container banner">
-            <div class="container">
+            <!-- Banner Start -->
+            <div class="container banner">
+                <div class="container">
 
-                <div class="row align-items-center mt-5 row-form">
-                    <div class="col-12 box-form rounded-4">
-                        <div class="row align-items-center box-title">
-                            <div class="col-lg-12 ">
-                                <h1 class="text-center">Form Penyampaian Kritik dan Saran</h1>
+                    <div class="row align-items-center mt-5 row-form">
+                        <div class="col-12 box-form rounded-4">
+                            <div class="row align-items-center box-title">
+                                <div class="col-lg-12 ">
+                                    <h1 class="text-center">Form Penyampaian Kritik dan Saran</h1>
+                                </div>
+                                <div class="col-lg-12 ">
+                                    <p class="text-center ">Jangan ragu untuk menghubungi kami</p>
+                                </div>
                             </div>
-                            <div class="col-lg-12 ">
-                                <p class="text-center ">Jangan untuk menghubungi kami</p>
-                            </div>
+                            <form class="row g-3 box mt-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="nama" placeholder="Nama">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="number" class="form-control" id="ponsel" placeholder="Ponsel">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="number" class="form-control" id="nim" placeholder="NIM">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Pesan" id="pesan"
+                                        style="height: 200px"></textarea>
+                                    <label for="floatingTextarea2"></label>
+                                </div>
+                                <div class="col-12 text-center mt-5">
+                                    <button type="submit" class="btn btn-primary bg-light hvr-grow">Kirim</button>
+                                </div>
+                            </form>
+
                         </div>
-                        <form class="row g-3 box mt-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" id="nama" placeholder="Nama">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="number" class="form-control" id="ponsel" placeholder="Ponsel">
-                            </div>
-                            <div class="col-md-12">
-                                <input type="number" class="form-control" id="nim" placeholder="NIM">
-                            </div>
-                            <div class="col-md-12">
-                                <input type="email" class="form-control" id="email" placeholder="Email">
-                            </div>
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Pesan" id="pesan"
-                                    style="height: 200px"></textarea>
-                                <label for="floatingTextarea2"></label>
-                            </div>
-                            <div class="col-12 text-center mt-5">
-                                <button type="submit" class="btn btn-primary bg-light">Kirim</button>
-                            </div>
-                        </form>
-
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Banner End -->
+            <!-- Banner End -->
 
-        <!-- Footer Start  -->
-        <footer id="footer">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 logo text-center">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 logo">
-                                    <img src="assets/LogoHimaPSY.png" alt="">
-                                </div>
-                                <div class="col-12">
-                                    <div class="container icon">
-                                        <a href="http://linkedln.com"><i class="bi bi-linkedin"></i></a>
-                                        <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
-                                        <a href="http://twitter.com"><i class="bi bi-twitter"></i></a>
-                                        <a href="http://tiktok.com"><i class="bi bi-tiktok"></i></a>
-                                        <a href="http://whatsapp.com"><i class="bi bi-envelope"></i></a>
+            <!-- Footer Start  -->
+            <footer id="footer">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 logo text-center">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-6 logo">
+                                        <img src="assets/LogoHimaPSY.png" alt="">
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-6">
+                                        <div class="container icon">
+                                            <a href="http://linkedln.com"><i class="bi bi-linkedin hvr-float"></i></a>
+                                            <a href="http://instagram.com"><i class="bi bi-instagram hvr-float"></i></a>
+                                            <a href="http://twitter.com"><i class="bi bi-twitter hvr-float"></i></a>
+                                            <a href="http://tiktok.com"><i class="bi bi-tiktok hvr-float"></i></a>
+                                            <a href="http://whatsapp.com"><i class="bi bi-envelope hvr-float"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 title text-center ">
+                            <h2>Hubungi Kami</h2>
+                            <i class="bi bi-telephone-fill hvr-float"></i> <a href=""
+                                class="hvr-underline-from-left">+62-822-5569-3035</a> <br>
+                            <i class="bi bi-chat-left-dots-fill hvr-float"></i> <a href="mailto:"
+                                class="hvr-underline-from-left">himapsy@gmail.com</a>
+                        </div>
+
                     </div>
-                    <div class="col-6 title text-center ">
-                        <h2>Hubungi Kami</h2>
-                        <i class="bi bi-telephone-fill"></i> <a href="">+62-822-5569-3035</a> <br>
-                        <i class="bi bi-chat-left-dots-fill"></i> <a href="mailto:">himapsy@gmail.com</a>
+                    <hr>
+                    <div class="row p-3">
+                        <div class="col-12 text-center">
+                            <p>copyright &copy; 2024 HIMAPSY UAA</p>
+                        </div>
                     </div>
                 </div>
-                <hr>
-                <div class="row p-3">
-                    <div class="col-12 text-center">
-                        <p>copyright &copy; 2024 HIMAPSY UAA.</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Footer Start  -->
+            </footer>
+            <!-- Footer Start  -->
+        </div>
     </section>
     <!-- Hero Section End -->
-
-
 
 
     <!-- ############################################################################ -->

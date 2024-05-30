@@ -727,9 +727,9 @@ progress {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
     .container, .container-md, .container-sm {
-        max-width: 720px
+        max-width: auto;
     }
 }
 
@@ -1177,7 +1177,7 @@ progress {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
     .col-md {
         flex: 1 0 0%
     }
