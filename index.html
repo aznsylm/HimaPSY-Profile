@@ -465,10 +465,37 @@
 
                 520: {
                     slidesPerView: 2,
+                    on: {
+                        init: function () {
+                            centerCard();
+                        },
+                        resize: function () {
+                            centerCard();
+                        }
+                    }
                 },
 
                 950: {
                     slidesPerView: 3,
+                    on: {
+                        init: function () {
+                            centerCard();
+                        },
+                        resize: function () {
+                            centerCard();
+                        }
+                    }
+                },
+                1440: {
+                    slidesPerView: 4,
+                    on: {
+                        init: function () {
+                            centerCard();
+                        },
+                        resize: function () {
+                            centerCard();
+                        }
+                    }
                 }
             }
         });
@@ -476,7 +503,7 @@
         function centerCard() {
             var swiperSlides = document.querySelectorAll('.swiper-slide');
             swiperSlides.forEach(function (slide) {
-                if (window.innerWidth <= 520) {
+                if (window.innerWidth <= 1440) {
                     slide.classList.add('center-card');
                 } else {
                     slide.classList.remove('center-card');
