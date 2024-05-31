@@ -143,14 +143,19 @@
 
         /* ************************************************** Responsif ************************************************** */
 
-
         @media (max-width: 480px) {
             #hero .banner .box-title h1 {
-                /* width: 100%; */
                 font-family: Poppins;
                 font-size: 30px;
                 font-weight: 700;
-                text-align: justify;
+                text-align: center;
+            }
+
+            #hero .banner .box-title p {
+                font-family: Poppins;
+                font-size: 18px;
+                font-weight: 400;
+                text-align: center;
             }
 
             #hero .banner {
@@ -180,6 +185,11 @@
 
             footer {
                 padding: 0 0 50px 0;
+            }
+
+            .center-card {
+                display: flex;
+                justify-content: center;
             }
         }
     </style>
@@ -459,15 +469,74 @@
                 delay: 2000,
                 disableOnInteraction: false,
             },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    on: {
+                        init: function () {
+                            centerCard();
+                        },
+                        resize: function () {
+                            centerCard();
+                        }
+                    }
+                },
+
+                520: {
+                    slidesPerView: 2,
+                    on: {
+                        init: function () {
+                            centerCard();
+                        },
+                        resize: function () {
+                            centerCard();
+                        }
+                    }
+                },
+
+                950: {
+                    slidesPerView: 3,
+                    on: {
+                        init: function () {
+                            centerCard();
+                        },
+                        resize: function () {
+                            centerCard();
+                        }
+                    }
+                },
+                1440: {
+                    slidesPerView: 4,
+                    on: {
+                        init: function () {
+                            centerCard();
+                        },
+                        resize: function () {
+                            centerCard();
+                        }
+                    }
+                }
+            }
         });
+
+        function centerCard() {
+            var swiperSlides = document.querySelectorAll('.swiper-slide');
+            swiperSlides.forEach(function (slide) {
+                if (window.innerWidth <= 1440) {
+                    slide.classList.add('center-card');
+                } else {
+                    slide.classList.remove('center-card');
+                }
+            });
+        }
+
+        window.addEventListener('resize', centerCard);
+        window.addEventListener('load', centerCard);
     </script>
 
 </body>

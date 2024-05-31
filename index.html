@@ -42,6 +42,11 @@
                 flex-direction: column-reverse;
             }
         }
+
+        .center-card {
+            display: flex;
+            justify-content: center;
+        }
     </style>
 
 </head>
@@ -141,7 +146,7 @@
                 <div class="col-lg-12 text-center">
                     <h1 class="hvr-underline-from-left">Tentang Kami</h1>
                 </div>
-            </div>5
+            </div>
             <div class="row align-items-center describe">
                 <div class="col-lg-6 col-md-12 col-sm-12 text-center image-box">
                     <img src="assets/tentang.jpg" class="rounded-3" alt="">
@@ -444,7 +449,43 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    on: {
+                        init: function () {
+                            centerCard();
+                        },
+                        resize: function () {
+                            centerCard();
+                        }
+                    }
+                },
+
+                520: {
+                    slidesPerView: 2,
+                },
+
+                950: {
+                    slidesPerView: 3,
+                }
+            }
         });
+
+        function centerCard() {
+            var swiperSlides = document.querySelectorAll('.swiper-slide');
+            swiperSlides.forEach(function (slide) {
+                if (window.innerWidth <= 520) {
+                    slide.classList.add('center-card');
+                } else {
+                    slide.classList.remove('center-card');
+                }
+            });
+        }
+
+        window.addEventListener('resize', centerCard);
+        window.addEventListener('load', centerCard);
     </script>
 
 </body>
