@@ -413,6 +413,8 @@
     </section>
     <!-- Program Kerja End -->
 
+    <button id="scrollToTopBtn" title="Go to top"><i class="bi bi-arrow-up-short hvr-float"></i></button>
+
     <!-- Footer Start  -->
     <footer id="footer">
         <div class="container">
@@ -421,16 +423,18 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 logo text-center">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-6 logo">
-                                <img src="assets/LogoHimaPSY.png" alt="">
+                            <div class="col-lg-12 col-md-12 col-sm-12 logo">
+                                <a href="#hero">
+                                    <img src="assets/LogoHimaPSY.png" alt="">
+                                </a>
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-6">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
                                 <div class="container icon">
                                     <a href="http://linkedln.com"><i class="bi bi-linkedin hvr-float"></i></a>
                                     <a href="http://instagram.com"><i class="bi bi-instagram hvr-float"></i></a>
                                     <a href="http://twitter.com"><i class="bi bi-twitter hvr-float"></i></a>
                                     <a href="http://tiktok.com"><i class="bi bi-tiktok hvr-float"></i></a>
-                                    <a href="http://whatsapp.com"><i class="bi bi-envelope hvr-float"></i></a>
+                                    <a href="http://facebook.com"><i class="bi bi-facebook hvr-float"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -438,9 +442,9 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 title text-center ">
                     <h2>Hubungi Kami</h2>
-                    <i class="bi bi-telephone-fill hvr-float"></i> <a href=""
+                    <i class="bi bi-telephone-fill hvr-float"></i> <a href="https://wa.me/6282255693035"
                         class="hvr-underline-from-left">+62-822-5569-3035</a> <br>
-                    <i class="bi bi-chat-left-dots-fill hvr-float"></i> <a href="mailto:"
+                    <i class="bi bi-chat-left-dots-fill hvr-float"></i> <a href="mailto:aizansyalim22@gmail.com"
                         class="hvr-underline-from-left">himapsy@gmail.com</a>
                 </div>
 
@@ -460,84 +464,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            rewind: true,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                    on: {
-                        init: function () {
-                            centerCard();
-                        },
-                        resize: function () {
-                            centerCard();
-                        }
-                    }
-                },
-
-                520: {
-                    slidesPerView: 2,
-                    on: {
-                        init: function () {
-                            centerCard();
-                        },
-                        resize: function () {
-                            centerCard();
-                        }
-                    }
-                },
-
-                950: {
-                    slidesPerView: 3,
-                    on: {
-                        init: function () {
-                            centerCard();
-                        },
-                        resize: function () {
-                            centerCard();
-                        }
-                    }
-                },
-                1440: {
-                    slidesPerView: 4,
-                    on: {
-                        init: function () {
-                            centerCard();
-                        },
-                        resize: function () {
-                            centerCard();
-                        }
-                    }
-                }
-            }
-        });
-
-        function centerCard() {
-            var swiperSlides = document.querySelectorAll('.swiper-slide');
-            swiperSlides.forEach(function (slide) {
-                if (window.innerWidth <= 1440) {
-                    slide.classList.add('center-card');
-                } else {
-                    slide.classList.remove('center-card');
-                }
-            });
-        }
-
-        window.addEventListener('resize', centerCard);
-        window.addEventListener('load', centerCard);
-    </script>
+    <script src="js/script.js"></script>
 
 </body>
 
