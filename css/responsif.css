@@ -45,6 +45,11 @@
         margin-top: 1rem;
     }
 
+    #hero .banner .container .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     #hero .btn-banner {
         margin-top: 10px;
     }
@@ -99,9 +104,9 @@
 
 }
 
+/* ************************************************** TABLET ************************************************** */
 @media (min-width: 481px) and (max-width: 767px) {}
 
-/* ************************************************** TABLET ************************************************** */
 @media (min-width: 768px) and (max-width: 1024px) {
     #hero .navbar {
         padding: 10px 20px 10px 20px;
@@ -116,6 +121,11 @@
     #hero .banner .container {
         margin: 0;
         max-width: 769px;
+    }
+
+    #hero .banner .container .row {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     #hero .banner .container .row .col-lg-6 {
@@ -251,4 +261,3 @@
 }
 
 /* ************************************************** LAPTOP ************************************************** */
-@media (min-width: 481px) and (max-width: 767px)
