@@ -85,6 +85,10 @@
             padding: 0;
         }
 
+        #hero .banner .row-whatsapp {
+            background-color: #25D366;
+        }
+
         /* ************************************************** FOOTER ************************************************** */
 
         footer {
@@ -276,17 +280,19 @@
             <div class="container banner">
                 <div class="container">
 
-                    <div class="row align-items-center mt-5 row-form">
+                    <!-- Database -->
+                    <div class="row align-items-center mt-5 mb-5 row-form">
                         <div class="col-12 box-form rounded-4">
                             <div class="row align-items-center box-title">
                                 <div class="col-lg-12 ">
                                     <h1 class="text-center">Form Penyampaian Kritik dan Saran</h1>
                                 </div>
                                 <div class="col-lg-12 ">
-                                    <p class="text-center ">Jangan ragu untuk menghubungi kami</p>
+                                    <p class="text-center ">Masukkan Kamu akan masuk didatabase kami dan segera kami
+                                        proses. Terimakasih</p>
                                 </div>
                             </div>
-                            <form class="row g-3 box mt-3">
+                            <form class="row g-3 box mt-3" action="" method="">
                                 <div class="col-md-6">
                                     <input type="text" class="form-control" id="nama" placeholder="Nama">
                                 </div>
@@ -296,9 +302,9 @@
                                 <div class="col-md-12">
                                     <input type="number" class="form-control" id="nim" placeholder="NIM">
                                 </div>
-                                <div class="col-md-12">
+                                <!-- <div class="col-md-12">
                                     <input type="email" class="form-control" id="email" placeholder="Email">
-                                </div>
+                                </div> -->
                                 <div class="form-floating">
                                     <textarea class="form-control" placeholder="Pesan" id="pesan"
                                         style="height: 200px"></textarea>
@@ -311,6 +317,41 @@
 
                         </div>
                     </div>
+
+                    <hr>
+                    <h2 style="text-align: center;">Atau Kirim Langsung ke Whatsapp</h2>
+                    <hr>
+
+                    <!-- Whatsapp -->
+                    <div class="row align-items-center mt-5 row-form">
+                        <div class="col-12 box-form rounded-4 row-whatsapp">
+                            <div class="row align-items-center box-title">
+                                <div class="col-lg-12 ">
+                                    <h1 class="text-center">Kirim ke Whatsapp Kami</h1>
+                                </div>
+                                <div class="col-lg-12 ">
+                                    <p class="text-center ">Saran Kamu Langsung masuk di Whatsapp Kami</p>
+                                </div>
+                            </div>
+                            <form class="row g-3 box mt-3" action="" onsubmit="toWhatsapp()">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="number" class="form-control" id="nim" name="nim" placeholder="NIM">
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="pesan" name="pesan"
+                                        placeholder="Masukkan Pesan Anda" style="height: 200px"></textarea>
+                                    <label for="pesan"></label>
+                                </div>
+                                <div class="col-12 text-center mt-5">
+                                    <button type="submit" class="btn btn-primary bg-light hvr-grow">Kirim</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <!-- Banner End -->
@@ -344,10 +385,10 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 title text-center ">
                             <h2>Hubungi Kami</h2>
-                            <i class="bi bi-telephone-fill hvr-float"></i> <a href="https://wa.me/6282255693035"
-                                class="hvr-underline-from-left">+62-822-5569-3035</a> <br>
-                            <i class="bi bi-chat-left-dots-fill hvr-float"></i> <a href="mailto:aizansyalim22@gmail.com"
-                                class="hvr-underline-from-left">himapsy@gmail.com</a>
+                            <i class="bi bi-telephone-fill hvr-float"></i> <a
+                                href="https://wa.me/6282255693035">+62-822-5569-3035</a> <br>
+                            <i class="bi bi-chat-left-dots-fill hvr-float"></i> <a
+                                href="mailto:aizansyalim22@gmail.com">himapsy@gmail.com</a>
                         </div>
 
                     </div>
