@@ -292,7 +292,7 @@
                                         proses. Terimakasih</p>
                                 </div>
                             </div>
-                            <form class="row g-3 box mt-3" action="" method="">
+                            <form class="row g-3 box mt-3" action="#" method="#">
                                 <div class="col-md-6">
                                     <input type="text" class="form-control" id="nama" placeholder="Nama">
                                 </div>
@@ -333,7 +333,7 @@
                                     <p class="text-center ">Saran Kamu Langsung masuk di Whatsapp Kami</p>
                                 </div>
                             </div>
-                            <form class="row g-3 box mt-3" action="" method="post" onsubmit="toWhatsapp()">
+                            <form class="row g-3 box mt-3" action="#" onsubmit="toWhatsapp()">
                                 <div class="col-md-6">
                                     <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama">
                                 </div>
@@ -412,6 +412,13 @@
 
     <!-- Initialize Swiper -->
     <script src="js/script.js"></script>
+    <script>
+        function toWhatsapp() {
+            const urlToWhatsapp = `https://wa.me/6282255693035?text=Halo, Nama saya ${nama.value}, dengan Nomor Induk Mahasiswa: ${nim.value}. Mohon maaf, menurut saya:  ${pesan.value}`;
+
+            window.open(urlToWhatsapp, "_blank");
+        }
+    </script>
 </body>
 
 </html>

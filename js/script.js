@@ -121,8 +121,4 @@ mybutton.addEventListener("click", function () {
 
 /* ************************************************** Send Message Whatsapp ************************************************** */
 
-function toWhatsapp() {
-  const urlToWhatsapp = `https://wa.me/6282255693035?text=Halo, nama saya ${nama.value}, dengan Nomor Induk Mahasiswa: ${nim.value}. Mohon maaf, menurut saya:  ${pesan.value}`;
 
-  window.open(urlToWhatsapp, "_blank");
-}
