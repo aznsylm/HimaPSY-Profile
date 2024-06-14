@@ -337,7 +337,7 @@
                                     <p class="text-center ">Saran Kamu Langsung masuk di Whatsapp Kami</p>
                                 </div>
                             </div>
-                            <form class="row g-3 box mt-3" action="#" onsubmit="toWhatsapp()">
+                            <form class="row g-3 box mt-3" action="#" onsubmit="toWhatsapp(event)">
                                 <div class="col-md-6">
                                     <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama">
                                 </div>
@@ -417,8 +417,18 @@
     <!-- Initialize Swiper -->
     <script src="js/script.js"></script>
     <script>
-        function toWhatsapp() {
-            const urlToWhatsapp = `https://wa.me/6282255693035?text=Halo, Nama saya ${nama.value}, dengan Nomor Induk Mahasiswa: ${nim.value}. Mohon maaf, menurut saya:  ${pesan.value}`;
+        // function toWhatsapp() {
+        //     const urlToWhatsapp = `https://wa.me/6282255693035?text=Halo, Nama saya ${nama.value}, dengan Nomor Induk Mahasiswa: ${nim.value}. Mohon maaf, menurut saya:  ${pesan.value}`;
+
+        //     window.open(urlToWhatsapp, "_blank");
+        // }
+        function toWhatsapp(event) {
+            event.preventDefault(); // Mencegah form dari pengiriman default
+            const nama = document.getElementById('nama').value;
+            const nim = document.getElementById('nim').value;
+            const pesan = document.getElementById('pesan').value;
+
+            const urlToWhatsapp = `https://wa.me/6282255693035?text=Halo, Nama saya ${nama}, dengan Nomor Induk Mahasiswa: ${nim}. Mohon maaf, menurut saya: ${pesan}`;
 
             window.open(urlToWhatsapp, "_blank");
         }
