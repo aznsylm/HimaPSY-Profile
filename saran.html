@@ -285,7 +285,7 @@
                 <div class="container">
 
                     <!-- Database -->
-                    <div class="row align-items-center mt-5 mb-5 row-form">
+                    <!-- <div class="row align-items-center mt-5 mb-5 row-form">
                         <div class="col-12 box-form rounded-4">
                             <div class="row align-items-center box-title">
                                 <div class="col-lg-12 ">
@@ -306,9 +306,6 @@
                                 <div class="col-md-12">
                                     <input type="number" class="form-control" id="nim" placeholder="NIM">
                                 </div>
-                                <!-- <div class="col-md-12">
-                                    <input type="email" class="form-control" id="email" placeholder="Email">
-                                </div> -->
                                 <div class="form-floating">
                                     <textarea class="form-control" placeholder="Pesan" id="pesan"
                                         style="height: 200px"></textarea>
@@ -320,7 +317,7 @@
                             </form>
 
                         </div>
-                    </div>
+                    </div> -->
 
                     <hr>
                     <h2 style="text-align: center;">Atau Kirim Langsung ke Whatsapp</h2>
@@ -424,12 +421,22 @@
         // }
         function toWhatsapp(event) {
             event.preventDefault(); // Mencegah form dari pengiriman default
+
             const nama = document.getElementById('nama').value;
             const nim = document.getElementById('nim').value;
             const pesan = document.getElementById('pesan').value;
 
+            // Debug: Menampilkan nilai di konsol untuk memastikan mereka diambil dengan benar
+            console.log('Nama:', nama);
+            console.log('NIM:', nim);
+            console.log('Pesan:', pesan);
+
             const urlToWhatsapp = `https://wa.me/6282255693035?text=Halo, Nama saya ${nama}, dengan Nomor Induk Mahasiswa: ${nim}. Mohon maaf, menurut saya: ${pesan}`;
 
+            // Debug: Menampilkan URL di konsol untuk memastikan URL benar
+            console.log('URL to Whatsapp:', urlToWhatsapp);
+
+            // Membuka URL di tab baru
             window.open(urlToWhatsapp, "_blank");
         }
     </script>
