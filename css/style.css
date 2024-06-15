@@ -44,7 +44,7 @@
 }
 
 #hero .container-fluid {
-    background-color: #41565C;
+    background-color: #2E8B57;
 }
 
 #hero .navbar {
@@ -53,11 +53,12 @@
 
 #hero .navbar .navbar-brand span {
     font-family: Poppins;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 800;
     line-height: 22.5px;
     text-align: left;
     margin-left: 10px;
+    color: #ffffff;
 }
 
 #hero .navbar .collapse .navbar-nav {
