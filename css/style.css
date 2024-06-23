@@ -44,7 +44,29 @@
 }
 
 #hero .container-fluid {
-    background-color: #2E8B57;
+    position: relative;
+    /* background: linear-gradient(135deg, rgba(46, 139, 87, 0.8), rgba(60, 179, 113, 0.8)); */
+    /* Gradient overlay */
+    padding: 20px;
+    /* border-radius: 0 0 50px 390px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+#hero .container-fluid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/hero/BG\ HERO.png');
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+    /* Ensures the pseudo-element is behind the content */
 }
 
 #hero .navbar {
@@ -58,7 +80,7 @@
     line-height: 22.5px;
     text-align: left;
     margin-left: 10px;
-    color: #ffffff;
+    color: #000000;
 }
 
 #hero .navbar .collapse .navbar-nav {
@@ -76,7 +98,7 @@
 
 #hero .navbar .collapse .nav-link {
     margin-right: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #hero .navbar .navbar-brand {
@@ -121,12 +143,45 @@
     font-style: normal;
     padding: 10px 50px 10px 50px;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: #668992;
+}
+
+#tentang-kami {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#tentang-kami::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/tentangKami/BG_TENTANG_KAMI.png') no-repeat center center;
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.container-fluid.tentang {
+    position: relative;
+    z-index: 1;
 }
 
 
 #hero .btn-banner a {
     text-decoration: none;
+    color: #fff;
+}
+
+#tentang-kami .btn-group a {
+    background-color: #668992;
+}
+
+#tentang-kami .container-fluid {
+    padding: 20px;
 }
 
 #tentang-kami .tentang, #program .Kerja {
@@ -194,8 +249,34 @@
     font-style: normal;
 }
 
+/* #pengurusInti {
+    background: linear-gradient(300deg, #2E8B57 -56.86%, #EEF1F2 100%);
+} */
+
 #pengurusInti {
-    background: linear-gradient(180deg, #14363E -76.86%, #EEF1F2 100%);
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8);
+    /* Background semi-transparan */
+}
+
+#pengurusInti::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/strukturOrganisasi/BG_STRUKTUR_ORGANISASI.png') no-repeat center center;
+    background-size: cover;
+    filter: blur(2px);
+    /* Mengatur tingkat blur */
+    z-index: -1;
+}
+
+.container.pengurus {
+    position: relative;
+    z-index: 1;
 }
 
 #pengurusInti .pengurus {
@@ -288,7 +369,7 @@
 }
 
 #divisi .container figcaption {
-    margin: -200px 10px 0 10px;
+    margin: -50px 10px 0 10px;
     /* padding: 0 30px 0 30px; */
     font-family: "Poppins", sans-serif;
     font-weight: 700;

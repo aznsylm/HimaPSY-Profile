@@ -14,7 +14,7 @@
         font-weight: 800;
         font-size: 18px;
         font-style: normal;
-        color: white;
+
     }
 
     #hero .title .title-AlmaAta {
@@ -81,7 +81,7 @@
         margin-top: 1rem;
         font-family: "Poppins", sans-serif;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 15px;
         font-style: normal;
     }
 
@@ -90,10 +90,10 @@
     }
 
     #divisi .container figcaption {
-        margin: -150px 10px 0 10px;
+        margin: -70px 10px 0 10px;
         font-family: "Poppins", sans-serif;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 30px;
         font-style: normal;
         width: 100%;
     }

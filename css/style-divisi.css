@@ -1,0 +1,146 @@
+#hero .navbar {
+    padding: 10px 20px 10px 20px;
+}
+
+#hero .banner .box-title {
+    padding: 0 200px 0 200px;
+}
+
+#hero .banner .box-title h1 {
+    font-family: Poppins;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 52.5px;
+    text-align: left;
+}
+
+#hero .banner .box-title p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    text-align: justify;
+
+}
+
+#hero .navbar .collapse .navbar-nav {
+    text-align: end;
+}
+
+#hero .navbar .collapse .navbar-nav {
+    padding: 0;
+}
+
+#hero .banner .mySwiper .swiper-wrapper {
+    margin-right: 20px;
+}
+
+#program .Kerja .visimisi {
+    margin-top: 100px;
+    padding: 0;
+}
+
+/* ************************************************** DIVISI ************************************************** */
+#hero .banner {
+    padding: 100px 0 100px 0;
+}
+
+#hero .banner .box-title {
+    padding: 0;
+}
+
+#program .Kerja {
+    padding: 100px 0 100px 0;
+}
+
+/* ************************************************** FOOTER ************************************************** */
+
+footer {
+    padding: 100px 0 0 0;
+}
+
+footer img {
+    width: 109px;
+    height: 99px;
+    top: 31px;
+    left: 463px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+footer .icon .bi {
+    margin-left: 10px;
+    font-size: 35px;
+}
+
+footer .row .title h2 {
+    display: flex;
+    justify-content: center;
+    font-family: Poppins;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: left;
+}
+
+footer .row .logo .icon a,
+footer .row .title a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+
+/* ************************************************** Responsif ************************************************** */
+
+@media (max-width: 480px) {
+
+
+    #hero .banner .box-title h1 {
+        font-family: Poppins;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    #hero .banner .box-title p {
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    #hero .banner {
+        padding: 1rem 0 1rem 0;
+    }
+
+    #hero .banner .row-form {
+        margin-top: 0 !important;
+    }
+
+    #hero .banner .box-title {
+        text-align: start;
+    }
+
+    #program .Kerja .col-sm-12 {
+        padding: 1rem 30px 1rem 30px;
+    }
+
+    #program .Kerja .visimisi {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    #program .Kerja .jarak {
+        margin-top: 100px;
+    }
+
+    footer {
+        padding: 0 0 50px 0;
+    }
+
+    .center-card {
+        display: flex;
+        justify-content: center;
+    }
+}

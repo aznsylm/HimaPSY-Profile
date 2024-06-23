@@ -304,7 +304,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <form class="row g-3 box mt-3" action="koneksi.php" method="POST">
+                            <form class="row g-3 box mt-3" action="connection.php" method="post">
                                 <div class="col-md-6">
                                     <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" />
                                 </div>
@@ -328,6 +328,22 @@
                             </form>
                         </div>
                     </div>
+                    
+                    <!-- Toast Notification -->
+                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <strong class="me-auto">Notifikasi</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body">
+                                Data Berhasil Tersimpan, Terimakasih Masukkannya
+                            </div>
+                        </div>
+                    </div>
+
+
+
 
                     <hr />
                     <h2 style="text-align: center">Atau Kirim Langsung ke Whatsapp</h2>
@@ -348,7 +364,8 @@
                             </div>
                             <form class="row g-3 box mt-3" action="#" onsubmit="toWhatsapp(event)">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" id="nama2" name="nama2" placeholder="Nama" />
+                                    <input type="text" class="form-control" id="nama2" name="nama2"
+                                        placeholder="Nama" />
                                 </div>
                                 <div class="col-md-6">
                                     <input type="number" class="form-control" id="nim2" name="nim2" placeholder="NIM" />
@@ -426,6 +443,7 @@
     <!-- Initialize Swiper -->
     <script src="js/script.js"></script>
     <script>
+        /* ************************************************** Send Message Whatsapp ************************************************** */
         function toWhatsapp(event) {
             event.preventDefault(); // Mencegah form dari pengiriman default
 
@@ -446,6 +464,35 @@
             // Membuka URL di tab baru
             window.open(urlToWhatsapp, "_blank");
         }
+
+        /* ************************************************** Notification ************************************************** */
+        document.addEventListener('DOMContentLoaded', function () {
+            const toastEl = document.getElementById('liveToast');
+            const toast = new bootstrap.Toast(toastEl);
+
+            // Event listener for form submission
+            const form = document.querySelector('form[action="koneksi.php"]');
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Mencegah form dari pengiriman default
+
+                const formData = new FormData(form);
+                fetch('koneksi.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => response.text())
+                    .then(data => {
+                        // Menampilkan toast notifikasi
+                        toast.show();
+
+                        // Clear form fields after submission
+                        form.reset();
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            });
+        });
     </script>
 </body>
 

@@ -67,9 +67,9 @@ function centerCard() {
   var swiperSlides = document.querySelectorAll(".swiper-slide");
   swiperSlides.forEach(function (slide) {
     if (window.innerWidth <= 1440) {
-      slide.classList.add("center-card");
+      slide.classList.add("text-center");
     } else {
-      slide.classList.remove("center-card");
+      slide.classList.remove("text-center");
     }
   });
 }
@@ -117,8 +117,6 @@ mybutton.addEventListener("click", function () {
   document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, IE dan Opera
 });
 
-/* ************************************************** Image Modal ************************************************** */
-
-/* ************************************************** Send Message Whatsapp ************************************************** */
+/* ************************************************** XXXXXXXXX ************************************************** */
 
 
