@@ -85,7 +85,7 @@
         }
 
         #hero .banner .row-whatsapp {
-            background-color: #25d366;
+            background-color: #14363e;
         }
 
         /* ************************************************** FOOTER ************************************************** */
@@ -225,20 +225,22 @@
             <nav class="navbar navbar-expand-lg bg-body-tranparant">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/LogoHimaPSY.png" alt="Logo" width="50" height="40"
-                            class="d-inline-block align-text-top" />
+                        <img src="assets/logo (2).png" alt="Logo" width="50" height="45" class="d-inline-block align-text-top">
                         <span>HIMA | PSY</span>
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navigasi-bar" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigasi-bar"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navigasi-bar">
-                        <ul class="navbar-nav me-end mb-2 mb-lg-0">
+                        <ul class="navbar-nav me-end mb-2 mb-lg-0 ">
+            
                             <li class="nav-item">
-                                <a class="nav-link hvr-underline-from-left" aria-current="page"
-                                    href="index.html">Beranda</a>
+                                <a class="nav-link hvr-underline-from-left" aria-current="page" href="index.html">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-left" aria-current="page" href="#tentang-kami">Tentang
+                                    Kami</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle hvr-underline-from-left" href="#" role="button"
@@ -246,39 +248,26 @@
                                     Divisi
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="BPH.html">Badan Pengurus Harian</a>
+                                    <li><a class="dropdown-item" href="BPH.html">Badan Pengurus Harian</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="HD.html">Human Development </a>
                                     </li>
-                                    <hr class="dropdown-divider" />
-                                    <li>
-                                        <a class="dropdown-item" href="ekonomi.html">Divisi EKONOMI</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="agama.html">Divisi AGAMA</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="PSDA.html">Divisi PSDA</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="sosmas.html">Divisi SOSMAS</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="diklat.html">Divisi DIKLAT</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="kominfo.html">Divisi KOMINFO</a>
-                                    </li>
-                                    <li></li>
+                                    <li><a class="dropdown-item" href="Fundraising.html">Fundraising</a></li>
+                                    <li><a class="dropdown-item" href="SA.html">Sosial Advokasi</a></li>
+                                    <li><a class="dropdown-item" href="PR.html">Public Relations</a></li>
+                                    <li><a class="dropdown-item" href="MI.html">Media Informasi</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link hvr-underline-from-left" aria-current="page"
-                                    href="#footer">Kontak</a>
+                                <a class="nav-link hvr-underline-from-left" aria-current="page" href="#footer">Kontak</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link hvr-underline-from-left" aria-current="page"
-                                    href="saran.html">Saran</a>
+                                <a class="nav-link hvr-underline-from-left" aria-current="page" href="gallery.html">Gallery</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-left" aria-current="page" href="saran.html">Saran</a>
+                            </li>
+            
                         </ul>
                     </div>
                 </div>
@@ -289,7 +278,7 @@
             <div class="container banner">
                 <div class="container">
                     <!-- Database -->
-                    <div class="row align-items-center mt-5 mb-5 row-form">
+                    <!-- <div class="row align-items-center mt-5 mb-5 row-form">
                         <div class="col-12 box-form rounded-4">
                             <div class="row align-items-center box-title">
                                 <div class="col-lg-12">
@@ -327,14 +316,15 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
-                    
+                    </div> -->
+
                     <!-- Toast Notification -->
                     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
                         <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                             <div class="toast-header">
                                 <strong class="me-auto">Notifikasi</strong>
-                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                    aria-label="Close"></button>
                             </div>
                             <div class="toast-body">
                                 Data Berhasil Tersimpan, Terimakasih Masukkannya
@@ -342,11 +332,8 @@
                         </div>
                     </div>
 
-
-
-
                     <hr />
-                    <h2 style="text-align: center">Atau Kirim Langsung ke Whatsapp</h2>
+                    <h2 style="text-align: center">Perbankan Syariah Mendengar</h2>
                     <hr />
 
                     <!-- Whatsapp -->
@@ -383,6 +370,7 @@
                             </form>
                         </div>
                     </div>
+
                 </div>
             </div>
             <!-- Banner End -->
@@ -395,36 +383,39 @@
             <footer id="footer">
                 <div class="container">
                     <div class="row align-items-center">
+
                         <div class="col-lg-6 col-md-6 col-sm-12 logo text-center">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 col-sm-12 logo">
                                         <a href="#hero">
-                                            <img src="assets/LogoHimaPSY.png" alt="" />
+                                            <img src="assets/logo (2).png" alt="">
                                         </a>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12">
                                         <div class="container icon">
                                             <a href="http://linkedln.com"><i class="bi bi-linkedin hvr-float"></i></a>
-                                            <a href="http://instagram.com"><i class="bi bi-instagram hvr-float"></i></a>
+                                            <a href="https://www.instagram.com/himaesy_uaa/"><i
+                                                    class="bi bi-instagram hvr-float"></i></a>
                                             <a href="http://twitter.com"><i class="bi bi-twitter hvr-float"></i></a>
-                                            <a href="http://tiktok.com"><i class="bi bi-tiktok hvr-float"></i></a>
+                                            <a href="https://www.tiktok.com/@himapsyuaa"><i
+                                                    class="bi bi-tiktok hvr-float"></i></a>
                                             <a href="http://facebook.com"><i class="bi bi-facebook hvr-float"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 title text-center">
+                        <div class="col-lg-6 col-md-6 col-sm-6 title text-center ">
                             <h2>Hubungi Kami</h2>
-                            <i class="bi bi-telephone-fill hvr-float"></i>
-                            <a href="https://wa.me/6282255693035">+62-822-5569-3035</a>
-                            <br />
-                            <i class="bi bi-chat-left-dots-fill hvr-float"></i>
-                            <a href="mailto:aizansyalim22@gmail.com">himapsy@gmail.com</a>
+                            <i class="bi bi-telephone-fill hvr-float"></i> <a
+                                href="https://wa.me/62878-7284-4227">+62-878-7284-4227</a> <br>
+                            <i class="bi bi-chat-left-dots-fill hvr-float"></i> <a
+                                href="mailto:himapsy.almaata@gmail.com">himapsy.almaata@gmail.com</a>
                         </div>
+
                     </div>
-                    <hr />
+                    <hr>
                     <div class="row p-3">
                         <div class="col-12 text-center">
                             <p>copyright &copy; 2024 HIMAPSY UAA</p>
@@ -433,6 +424,7 @@
                 </div>
             </footer>
             <!-- Footer Start  -->
+
         </div>
     </section>
     <!-- Hero Section End -->
